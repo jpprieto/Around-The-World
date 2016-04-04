@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+<script type="text/javascript" src="Program.js"></script>
+</head>
+
+<body>
+    Country's name:<br>
+<form>
+    <input id="capital" type="text" name="firstname" value=""><br>
+   <input type="submit" value="Submit" class="submit" onclick=""myFunction()"">
+</form>
+
+<script>
+var capitals = {
+   "United States" : "Washington. DC",
+   "Colombia" : "Bogota",
+   "Germany" : "Berlin",
+   "Japan" : "Tokyo",
+   "China" : "Beijing",
+   "Spain" : "Madrid"
+}
+    $(".submit").click(function(){
+    var capital = $("#capital").val();
+    alert(capitals[capital]);
+});
+</script>
+</body>
+
+</html>
